@@ -1,3 +1,5 @@
+library(stringr)
+
 readPollutantData <- function(directory, id) {
   filePath <- paste(directory, str_pad(id, 3, pad = "0"), ".csv",sep="")
   read.csv(filePath)
